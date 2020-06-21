@@ -6,6 +6,7 @@ using EmployeeManagementDemo.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -27,11 +28,18 @@ namespace EmployeeManagementDemo
         {
             services.AddDbContextPool<AppDbContext>(options => options.
                     UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+            {
+                options.Password.RequiredLength = 10;
+                options.Password.RequiredUniqueChars = 3;
+            }).AddEntityFrameworkStores<AppDbContext>();
+
             services.AddMvc(options =>
                 options.EnableEndpointRouting = false);
+
             services.AddScoped<IEmployeeRepository, SqlRepository>();
         }
-
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
@@ -39,10 +47,16 @@ namespace EmployeeManagementDemo
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            }
             //app.UseDefaultFiles();
             app.UseStaticFiles();
             //app.UseFileServer();
             //app.UseMvcWithDefaultRoute();
+            app.UseAuthentication();
             app.UseMvc(routes =>
                 routes.MapRoute("default", "{Controller=home}/{Action=index}/{id?}"));
 
