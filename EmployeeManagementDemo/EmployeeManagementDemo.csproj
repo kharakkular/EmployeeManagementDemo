@@ -7,6 +7,8 @@
   <ItemGroup>
     <Compile Remove="Migrations\20200527003020_PhotopathMigration.cs" />
     <Compile Remove="Migrations\20200527003020_PhotopathMigration.Designer.cs" />
+    <Compile Remove="Migrations\20200623213638_Extend_IdentityUser.cs" />
+    <Compile Remove="Migrations\20200623213638_Extend_IdentityUser.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

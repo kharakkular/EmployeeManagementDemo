@@ -1,5 +1,6 @@
 ﻿using EmployeeManagementDemo.Models;
 using EmployeeManagementDemo.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Abstractions;
@@ -16,7 +17,7 @@ namespace EmployeeManagementDemo.Controllers
     {
         private readonly IEmployeeRepository _employeesRepo;
         private readonly IHostingEnvironment _hostingEnvironment;
-        private readonly ILogger _logger; 
+        private readonly ILogger _logger;
         public HomeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment,
             ILogger<HomeController> logger)
         {
@@ -24,6 +25,7 @@ namespace EmployeeManagementDemo.Controllers
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
         }
+        [AllowAnonymous]
         public ViewResult Index()
         {
             var model = _employeesRepo.GetAllEmployees();

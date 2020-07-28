@@ -26,8 +26,15 @@ using EmployeeManagementDemo.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"836420c8187f443020578d5e65a3f6bb73201ec2", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"eb9fb7a161d0fa1f3279076965cb6666821eb020", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d070751bd6f0efb852a261cfd9f7335eb18be154", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

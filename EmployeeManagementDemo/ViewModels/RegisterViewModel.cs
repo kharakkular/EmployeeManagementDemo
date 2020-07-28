@@ -1,4 +1,6 @@
-﻿using System;
+﻿using EmployeeManagementDemo.Utilities;
+using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -10,6 +12,8 @@ namespace EmployeeManagementDemo.ViewModels
     {
         [Required]
         [EmailAddress]
+        [Remote(action:"IsEmailInUse",controller:"Account")]
+        [ValidEmailDomain(allowedDomain:"pragimtech.com",ErrorMessage = "Email domain must be pragimtech.com")]
         public string Email { get; set; }
         [Required]
         [DataType(DataType.Password)]
@@ -18,5 +22,6 @@ namespace EmployeeManagementDemo.ViewModels
         [Display(Name ="Confirm Password")]
         [Compare("Password",ErrorMessage ="Password and confirm passowrd does not match")]
         public string ConfirmPassword { get; set; }
+        public string City { get; set; }
     }
 }

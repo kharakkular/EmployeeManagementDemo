@@ -78,7 +78,13 @@ D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\bin\Debug\netcoreapp
 D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\EmployeeManagementDemo.csprojAssemblyReference.cache
 D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\EmployeeManagementDemo.csproj.CoreCompileInputs.cache
 D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\EmployeeManagementDemo.MvcApplicationPartsAssemblyInfo.cache
 D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Administration\CreateRole.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Administration\ListRoles.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Administration\EditRole.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Administration\EditUsersInRole.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\Razor\Views\Administration\AccessDenied.cshtml.g.cs
+D:\Study\Coop\EmployeeManagementDemo\EmployeeManagementDemo\obj\Debug\netcoreapp3.1\EmployeeManagementDemo.csprojAssemblyReference.cache
